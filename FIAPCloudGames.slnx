@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".env" />
+    <File Path="docker-compose.yml" />
+    <File Path="Tech Challenge Requirements/TC NETT - Fase 1.pdf" />
+    <File Path="Tech Challenge Requirements/TC NETT - Fase 2.pdf" />
+    <File Path="Tech Challenge Requirements/TC NETT - Fase 3.pdf" />
+    <File Path="Tech Challenge Requirements/TC NETT - Fase 4.pdf" />
+  </Folder>
+  <Project Path="CatalogApi/Catalog.Api/Catalog.Api.csproj" />
+  <Project Path="CatalogApi/Catalog.Application/Catalog.Application.csproj" />
+  <Project Path="CatalogApi/Catalog.Domain/Catalog.Domain.csproj" />
+  <Project Path="CatalogApi/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+  <Project Path="NotificationsApi/Notifications.Api/Notifications.Api.csproj" />
+  <Project Path="NotificationsApi/Notifications.Application/Notifications.Application.csproj" />
+  <Project Path="NotificationsApi/Notifications.Infrastructure/Notifications.Infrastructure.csproj" />
+  <Project Path="PaymentsApi/Payments.Api/Payments.Api.csproj" />
+  <Project Path="PaymentsApi/Payments.Application/Payments.Application.csproj" />
+  <Project Path="PaymentsApi/Payments.Domain/Payments.Domain.csproj" />
+  <Project Path="PaymentsApi/Payments.Infrastructure/Payments.Infrastructure.csproj" />
+  <Project Path="UsersApi/Users.Api/Users.Api.csproj" />
+  <Project Path="UsersApi/Users.Application/Users.Application.csproj" />
+  <Project Path="UsersApi/Users.Domain/Users.Domain.csproj" />
+  <Project Path="UsersApi/Users.Infrastructure/Users.Infrastructure.csproj" />
+</Solution>
