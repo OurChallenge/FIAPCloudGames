@@ -27,12 +27,19 @@ services:
       - "15672:15672"
       
   elasticsearch:
-    container_name: fiapcloudgames-elasticsearch
     image: elasticsearch:9.3.2
+    container_name: fiapcloudgames-elasticsearch
     environment:
       - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
     ports:
       - "9200:9200"
+      - "9300:9300"
+    mem_limit: 2G
+    networks:
+      - somenetwork
+    restart: unless-stopped
 
   users-api:
     build:
@@ -71,6 +78,7 @@ services:
     container_name: payments-api
     depends_on:
       - sqlserver
+    # restart: on-failure #avoiding the healthcheck
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:8080
@@ -84,8 +92,13 @@ services:
     container_name: notifications-api
     depends_on:
       - sqlserver
+    # restart: on-failure #avoiding the healthcheck
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:8080
     ports:
       - "5004:8080"
+
+networks:
+  somenetwork:
+    driver: bridge
