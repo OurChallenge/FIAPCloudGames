@@ -40,7 +40,7 @@ services:
 
   users-api:
     build:
-      context: ./UsersApi
+      context: ../UsersApi
       dockerfile: Users.Api/Dockerfile
     container_name: users-api
     depends_on:
@@ -55,7 +55,7 @@ services:
 
   catalog-api:
     build:
-      context: ./CatalogApi
+      context: ../CatalogApi
       dockerfile: Catalog.Api/Dockerfile
     container_name: catalog-api
     depends_on:
@@ -70,7 +70,7 @@ services:
 
   payments-api:
     build:
-      context: ./PaymentsApi
+      context: ../PaymentsApi
       dockerfile: Payments.Api/Dockerfile
     container_name: payments-api
     depends_on:
@@ -84,7 +84,7 @@ services:
 
   notifications-api:
     build:
-      context: ./NotificationsApi
+      context: ../NotificationsApi
       dockerfile: Notifications.Api/Dockerfile
     container_name: notifications-api
     depends_on:
