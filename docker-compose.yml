@@ -37,9 +37,6 @@ services:
       - "9200:9200"
       - "9300:9300"
     mem_limit: 2G
-    networks:
-      - somenetwork
-    restart: unless-stopped
 
   users-api:
     build:
@@ -98,7 +95,3 @@ services:
       ASPNETCORE_URLS: http://+:8080
     ports:
       - "5004:8080"
-
-networks:
-  somenetwork:
-    driver: bridge
