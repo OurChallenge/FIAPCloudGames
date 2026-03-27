@@ -1,7 +1,9 @@
 <Solution>
-  <Folder Name="/Solution Items/">
+  <Folder Name="/Docker/">
     <File Path=".env" />
     <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/Requirements/">
     <File Path="Tech Challenge Requirements/TC NETT - Fase 1.pdf" />
     <File Path="Tech Challenge Requirements/TC NETT - Fase 2.pdf" />
     <File Path="Tech Challenge Requirements/TC NETT - Fase 3.pdf" />
